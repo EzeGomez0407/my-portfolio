@@ -1,0 +1,60 @@
+.contain {
+  overflow: hidden;
+}
+
+.containImg {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  border-radius: 5px;
+  /* height: 171px; */
+  object-fit: contain;
+  transition: all 0.8s;
+}
+
+.containBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+}
+
+.containBtn button {
+  color: #bbb;
+  font-size: 16px;
+  margin: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #bbb;
+  transition: all 0.4s;
+}
+.containBtn button:hover {
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* TRANSITIONS */
+
+.fade_img-enter {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+.fade_img-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fade_img-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fade_img-exit-active {
+  opacity: 0;
+  transform: translateX(50%);
+}
+.fade_img-enter-active,
+.fade_img-exit-active {
+  transition: opacity 450ms, transform 600ms;
+}

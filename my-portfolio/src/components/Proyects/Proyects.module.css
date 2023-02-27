@@ -1,0 +1,62 @@
+.contain {
+  margin: 40px 0;
+  color: #fff;
+}
+.containProyect {
+  color: #fff;
+  padding: 20px;
+}
+.proyects {
+  background-color: #ffffff2f;
+  backdrop-filter: blur(1.2px);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.titleHeader {
+}
+
+.titleProyect {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  border-bottom: 1px solid #aaa;
+}
+
+.containLinks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.linksProyects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #e7fcfe;
+  color: #171c2e;
+}
+.linksProyects:hover {
+  outline: 2px solid #171c2e;
+}
+@media (min-width: 720px) {
+  .containProyect {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .proyects {
+    width: 500px;
+    margin: 20px;
+  }
+}
