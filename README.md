@@ -1,2 +1,1 @@
-# my-portfolio
-portfolio personal
+Este es mi portfolio, aun no lo termino, la idea es tener una ruta con un formulario para que me puedan contactar via mail, por el momento, lo demás está listo, la aplicación es responsiva, por lo tanto se la puede abrir en cualquier dispositivo
