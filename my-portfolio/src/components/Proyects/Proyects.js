@@ -78,13 +78,13 @@ function Proyects() {
             <span className={s.titleProyect}>Henry Food</span>
             <Carrousel arrImages={imgPI} />
             <span className={s.containLinks}>
-              {/* <a
-              href="https://proyecto-final-pf.vercel.app/"
-              className={s.linksProyects}
-              target="_blank"
-            >
-              🐾 Ir al proyecto
-            </a> */}
+              <a
+                href="https://henry-food-one.vercel.app/"
+                className={s.linksProyects}
+                target="_blank"
+              >
+                🍝 Ir al proyecto
+              </a>
               <a
                 href="https://github.com/EzeGomez0407/Proyecto-Individual-"
                 className={s.linksProyects}
