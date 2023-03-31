@@ -46,6 +46,7 @@ function Proyects() {
                 href="https://proyecto-final-pf.vercel.app/"
                 className={s.linksProyects}
                 target="_blank"
+                rel="noreferrer"
               >
                 🐾 Ir al proyecto
               </a>
@@ -53,6 +54,7 @@ function Proyects() {
                 href="https://github.com/gitperalta/proyecto-final-pf"
                 className={s.linksProyects}
                 target="_blank"
+                rel="noreferrer"
               >
                 <SiGithub className={s.iconLink} /> Repositorio
               </a>
@@ -82,6 +84,7 @@ function Proyects() {
                 href="https://henry-food-one.vercel.app/"
                 className={s.linksProyects}
                 target="_blank"
+                rel="noreferrer"
               >
                 🍝 Ir al proyecto
               </a>
@@ -89,6 +92,7 @@ function Proyects() {
                 href="https://github.com/EzeGomez0407/Proyecto-Individual-"
                 className={s.linksProyects}
                 target="_blank"
+                rel="noreferrer"
               >
                 <SiGithub className={s.iconLink} /> Repositorio
               </a>

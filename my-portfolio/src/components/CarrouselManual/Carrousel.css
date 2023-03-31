@@ -4,6 +4,9 @@
 
 .containImg {
   width: 100%;
+  height: 150px;
+  background-color: #fff3;
+  border-radius: 5px;
 }
 
 .img {
