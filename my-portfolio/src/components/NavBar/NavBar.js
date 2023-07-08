@@ -4,24 +4,44 @@ import { Outlet, Link } from "react-router-dom";
 import s from "./navBar.module.css";
 
 function NavBar() {
+  const handlerClickScroll = (e) => {
+    e.preventDefault();
+    const { name } = e.target;
+
+    const element = document.getElementById(name);
+    element.scrollIntoView({ behavior: "smooth", block: "end" });
+  };
+
   return (
     <div className={s.containNav}>
       <nav className={s.nav}>
-        <a className={s.links} href="#about-me">
+        <button
+          className={s.links}
+          name="about-me"
+          onClick={handlerClickScroll}
+        >
           Sobre mi
-        </a>
-        <a className={s.links} href="#my-proyects">
+        </button>
+        <button
+          className={s.links}
+          name="my-proyects"
+          onClick={handlerClickScroll}
+        >
           Proyectos
-        </a>
+        </button>
         {/* <a className={s.links} href="#my-experience">
           Experiencia
         </a> */}
         {/* <Link className={s.links} to="/contact-me">
           Contacto
         </Link> */}
-        <a className={s.links} href="#contact-me">
+        <button
+          className={s.links}
+          name="contact-me"
+          onClick={handlerClickScroll}
+        >
           Contacto
-        </a>
+        </button>
       </nav>
 
       <Outlet />

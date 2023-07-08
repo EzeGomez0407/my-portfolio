@@ -27,23 +27,7 @@ function AboutMe() {
         adquirido una base sólida en varias tecnologías. Estoy familiarizado con
         metodologías ágiles y tengo experiencia práctica en la resolución de
         problemas y el desarrollo de soluciones creativas.
-        {/* <b>Hola!</b> Mi nombre es Ezequiel, estoy en busca de una oportuniad
-        laboral en la cual pueda demostrar mis conocimientos y habilidades en el
-        desarrollo web */}
       </p>
-
-      {/* "Apasionado de la programación y en búsqueda de mi primer experiencia en el mundo de las tecnologías de la información (IT)"
-
-¡Bienvenido !  Mi objetivo principal es embarcarme en mi primer desafío profesional en el campo de IT, donde pueda aplicar mis habilidades y conocimientos en desarrollo de software.
-
-A lo largo de mi trayecto en el aprendizaje autodidacta, he adquirido una base sólida en varias tecnologías. Estoy familiarizado con metodologías ágiles y tengo experiencia práctica en la resolución de problemas y el desarrollo de soluciones creativas.
-
-Mi motivación intrínseca me impulsa constantemente a expandir mis conocimientos y habilidades en el área de IT. A través de cursos en línea, tutoriales y proyectos personales, continúo explorando nuevas tecnologías y frameworks para mantenerme actualizado en este campo en constante evolución.
-
-En este portfolio, encontrarás ejemplos de mis proyectos pasados, donde podrás apreciar mi capacidad para enfrentar desafíos técnicos, mi atención al detalle y mi enfoque en la calidad del código. Además, también podrás explorar mis habilidades de trabajo en equipo y mi capacidad para colaborar eficazmente con otros profesionales de IT.
-
-Estoy ansioso por embarcarme en mi primer desafío profesional en IT y contribuir con mis habilidades y entusiasmo a un equipo dinámico. Si compartes mi pasión por la programación y estás interesado en colaborar en proyectos emocionantes, no dudes en ponerte en contacto conmigo.
- */}
 
       <div className={s.containSkills}>
         <h2 className={s.subTitle}>Habilidades interpersonales</h2>

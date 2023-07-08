@@ -15,8 +15,11 @@
 }
 .links {
   text-decoration: none;
+  border: none;
+  background: none;
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
 }
 
 @media (min-width: 720px) {
