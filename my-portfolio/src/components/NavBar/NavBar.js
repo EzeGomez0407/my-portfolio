@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 // import ContactMe from "../../pages/ContactMe/ContactMe";
 import s from "./navBar.module.css";
 
@@ -28,6 +28,9 @@ function NavBar() {
           onClick={handlerClickScroll}
         >
           Proyectos
+        </button>
+        <button className={s.links} name="skills" onClick={handlerClickScroll}>
+          Habilidades
         </button>
         {/* <a className={s.links} href="#my-experience">
           Experiencia

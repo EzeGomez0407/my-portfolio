@@ -7,7 +7,7 @@ function Carrousel({ arrImages }) {
 
   const handlerOnClick = (e) => {
     const { name } = e.target;
-    console.log(current);
+
     if (name === "next-btn") {
       current < arrImages.length - 1 && setCurrent((curr) => curr + 1);
     } else if (name === "prev-btn") {

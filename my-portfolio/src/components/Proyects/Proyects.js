@@ -33,7 +33,7 @@ function Proyects() {
   ];
 
   return (
-    <div className={s.contain} id="my-proyects">
+    <section className={s.contain} id="my-proyects">
       <h2 className={s.titleHeader}>Proyectos</h2>
       <div className={s.containProyect}>
         {viewWidth < 9720 ? (
@@ -112,7 +112,7 @@ function Proyects() {
           <div></div>
         )}
       </div>
-    </div>
+    </section>
   );
 }
 

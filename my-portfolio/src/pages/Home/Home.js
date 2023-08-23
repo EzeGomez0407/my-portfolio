@@ -1,27 +1,20 @@
 import React from "react";
-import AboutMe from "../../components/AboutMe/AboutMe";
+import Skills from "../../components/Skills/Skills";
 import Proyects from "../../components/Proyects/Proyects";
 import s from "./Home.module.css";
 import { SiTwitter, SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
+import AboutMe from "../../components/AboutMe.js/AboutMe";
 
 function Home() {
   return (
     <div className={s.containHome}>
-      <header className={s.header}>
-        <img
-          src="../../../imgProfile.png"
-          alt="imagen de perfil"
-          className={s.imgProfile}
-        />
-        <h1 className={s.titleHeader}>
-          Full Stack Developer, en busca de mi primer empleo IT
-        </h1>
-      </header>
       <AboutMe />
       <hr className={s.separateComponent} />
       <Proyects />
       <hr className={s.separateComponent} />
-      <div id="contact-me" className={s.containContact}>
+      <Skills />
+      <hr className={s.separateComponent} />
+      <section id="contact-me" className={s.containContact}>
         <h2 className={s.titleContact}>Contacto</h2>
         <div className={s.divLinksContact}>
           <a
@@ -59,7 +52,7 @@ function Home() {
             Twitter
           </a>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -1,15 +1,8 @@
-.containAboutMe {
+.containSkills {
   color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-.aboutMe_p {
-  text-align: center;
-  padding: 20px;
-  margin: 20px 0;
-}
-.containSkills {
   margin: 20px 0;
 }
 .aboutMe_p b {
@@ -38,7 +31,6 @@
 
 @media (min-width: 720px) {
   .aboutMe_p {
-    width: 60%;
     font-size: 18px;
   }
   .aboutMe_p b {

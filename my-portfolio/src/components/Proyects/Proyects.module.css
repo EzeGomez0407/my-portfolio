@@ -3,18 +3,19 @@
   color: #fff;
 }
 .containProyect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #fff;
-  padding: 20px;
+  padding: 20px 0;
 }
 .proyects {
   background-color: #ffffff2f;
   backdrop-filter: blur(1.2px);
+
   margin: 20px 0;
   padding: 20px;
-  border-radius: 10px;
-}
-
-.titleHeader {
+  /* border-radius: 10px; */
 }
 
 .titleProyect {
@@ -52,11 +53,15 @@
 }
 @media (min-width: 720px) {
   .containProyect {
+    padding: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   .proyects {
     width: 500px;
+    min-height: 700px;
     margin: 20px;
   }
 }

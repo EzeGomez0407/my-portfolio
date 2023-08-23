@@ -1,0 +1,49 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.imgProfile {
+  width: 200px;
+  height: auto;
+  object-fit: fill;
+  margin-bottom: 30px;
+}
+.containTitleAndText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+.titleHeader {
+  font-size: 32px;
+  text-shadow: 10px 10px 100px #000;
+}
+.aboutMe_p {
+  text-align: left;
+  margin: 20px 0;
+}
+
+@media (min-width: 830px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .imgProfile {
+    width: 320px;
+    margin: 0;
+  }
+  .containTitleAndText {
+    width: 60%;
+  }
+  .titleHeader {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .aboutMe_p {
+    margin: 0;
+    font-size: 18px;
+  }
+}
