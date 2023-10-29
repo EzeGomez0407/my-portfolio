@@ -1,19 +1,32 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
 // import ContactMe from "../../pages/ContactMe/ContactMe";
 import s from "./navBar.module.css";
 
 function NavBar() {
+  const [widthScreen, setWidthScreen] = useState();
+
+  window.addEventListener("resize", () => {
+    setWidthScreen(window.visualViewport.width);
+  });
+
   const handlerClickScroll = (e) => {
     e.preventDefault();
     const { name } = e.target;
-
     const element = document.getElementById(name);
-    element.scrollIntoView({ behavior: "smooth", block: "end" });
+
+    widthScreen < 1400
+      ? element.scrollIntoView({ behavior: "smooth", block: "start" })
+      : element.scrollIntoView({ behavior: "smooth", block: "end" });
   };
 
+  useEffect(() => {
+    setWidthScreen(window.visualViewport.width);
+  }, []);
+
   return (
-    <div className={s.containNav}>
+    <div className={s.containLayout}>
       <nav className={s.nav}>
         <button
           className={s.links}
@@ -33,11 +46,11 @@ function NavBar() {
           Habilidades
         </button>
         {/* <a className={s.links} href="#my-experience">
-          Experiencia
-        </a> */}
+            Experiencia
+          </a> */}
         {/* <Link className={s.links} to="/contact-me">
-          Contacto
-        </Link> */}
+            Contacto
+          </Link> */}
         <button
           className={s.links}
           name="contact-me"

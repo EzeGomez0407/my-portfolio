@@ -1,4 +1,4 @@
-.containNav {
+.containLayout {
   width: 100%;
   position: relative;
 }
@@ -9,23 +9,32 @@
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 20px 0px;
-  z-index: 10;
+  padding: 0px;
   background-color: #333;
+  z-index: 10;
+  border-bottom: #000 solid 2px;
 }
 .links {
+  height: 100%;
+  position: relative;
   text-decoration: none;
   border: none;
+  border-bottom: #ffffff00 solid 2px;
+  padding: 20px 0;
   background: none;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
+  transition: border 0.3s;
+}
+.links:hover {
+  border-bottom: #ffffff solid 2px;
 }
 
 @media (min-width: 720px) {
   .nav {
-    justify-content: flex-start;
-    /* padding: 20px; */
+    justify-content: center;
+    gap: 40px;
   }
   .links {
     margin: 0 20px;
