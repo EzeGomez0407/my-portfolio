@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import s from "./Skills.module.css";
 import CardSkills from "../CardSkills/CardSkills";
-import { softSkill, techSkill } from "../../skills";
+import { softSkill, techSkill } from "../../data/skills";
 
 function Skills() {
   const [more, setMore] = useState(4);
