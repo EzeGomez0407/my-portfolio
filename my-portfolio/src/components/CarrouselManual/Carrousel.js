@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import "./Carrousel.css";
+import { AdvancedImage } from "@cloudinary/react";
 
 function Carrousel({ arrImages }) {
   const [current, setCurrent] = useState(0);
@@ -14,7 +15,7 @@ function Carrousel({ arrImages }) {
       current > 0 && setCurrent((curr) => curr - 1);
     }
   };
-
+  
   return (
     <div className={"contain"}>
       <div className="containImg">
@@ -22,15 +23,17 @@ function Carrousel({ arrImages }) {
           <CSSTransition
             classNames="fade_img"
             key={arrImages[current]}
-            addEndListener={(node, done) =>
+            addEndListener = {(node, done) =>
               node.addEventListener("transitionend", done, false)
             }
           >
-            <img
+            <AdvancedImage cldImg={arrImages[current]} className="img"
+              alt="imagenes carrousel"/>
+            {/* <img
               src={arrImages[current]}
               className="img"
               alt="imagenes carrousel"
-            />
+            /> */}
           </CSSTransition>
         </SwitchTransition>
       </div>

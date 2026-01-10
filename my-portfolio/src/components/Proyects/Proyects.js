@@ -1,5 +1,9 @@
 import CardProyect from "../CardProyect/CardProyect";
 import s from "./Proyects.module.css";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { auto } from "@cloudinary/url-gen/actions/resize";
+import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
+import { AdvancedImage } from "@cloudinary/react";
 import { proyects } from "../../data/proyectsData";
 
 function Proyects() {
@@ -16,6 +20,7 @@ function Proyects() {
               linkProyect={proyect.linkProyect}
               repoProyect={proyect.repoProyect}
               typeProyect={proyect.typeProyect}
+              key={proyect.linkProyect}
             />
           ))}
       </div>
