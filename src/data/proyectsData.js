@@ -43,28 +43,30 @@ export const proyects = [
     ingresando el mismo en el buscador que se encuentra en la barra de
     navegación. Tambien se pueden publicar recetas mediante un
     formulario controlado.`,
-    imgArr: [
-      "PI_screenshot_2_xlqmyx",
-      "PI_screenshot_o2uoiz",
-      "PI_screenshot_3_bbpwj5",
-      "PI_screenshot_4_dw8rpt",
-    ].map((img)=> cld.image(img).format('auto').quality('auto').resize(fill().width(436))),
-    linkProyect: "https://henry-food-one.vercel.app/",
-    repoProyect: "https://github.com/EzeGomez0407/Proyecto-Individual-",
-    typeProyect: "PROYECTO ACADÉMICO INDIVIDUAL",
+    imgProyect: cld.image('PI_screenshot_2_xlqmyx').format('auto').quality('auto').resize(fill().width(436))
+    // imgArr: [
+    //   "PI_screenshot_2_xlqmyx",
+    //   "PI_screenshot_o2uoiz",
+    //   "PI_screenshot_3_bbpwj5",
+    //   "PI_screenshot_4_dw8rpt",
+    // ].map((img)=> cld.image(img).format('auto').quality('auto').resize(fill().width(436))),
+    // linkProyect: "https://henry-food-one.vercel.app/",
+    // repoProyect: "https://github.com/EzeGomez0407/Proyecto-Individual-",
+    // typeProyect: "PROYECTO ACADÉMICO INDIVIDUAL",
   },
   {
     titleProyect: "App ToDo",
     descriptionProyect: `es una aplicación sencilla y práctica, desarrollada con el propósito de poner en práctica mis conocimientos en programación. Agrega tareas a la lista con su respectiva descripción, ajusta el tiempo que te vas a tomar para realizarla, marca como completadas tus tareas existentes o elimina tareas no deseadas. Las tareas quedan guardadas en el localstorage, los usuarios son almacenados en una base de datos MySQL, las contraseñas son hasheadas para que nadie pueda acceder a sus cuentas. Todavía sigue en desarrollo, faltan algunas funciones por añadir.`,
-    imgArr: [
-      "img-app-todo-1_x4kewk",
-      "img-app-todo-2_eqpgch",
-      "img-app-todo-3_fqldha",
-      "img-app-todo-4_q3wma0",
-      "img-app-todo-5_mwcsaj",
-    ].map((img)=> cld.image(img).format('auto').quality('auto').resize(fill().width(436))),
-    linkProyect: "https://app-to-do-sigma.vercel.app/",
-    repoProyect: "https://github.com/EzeGomez0407/App-To-Do",
-    typeProyect: "PROYECTO PERSONAL (EN DESARROLLO)",
+    imgProyect: cld.image('img-app-todo-1_x4kewk').format('auto').quality('auto').resize(fill().width(436))
+    // imgArr: [
+    //   "img-app-todo-1_x4kewk",
+    //   "img-app-todo-2_eqpgch",
+    //   "img-app-todo-3_fqldha",
+    //   "img-app-todo-4_q3wma0",
+    //   "img-app-todo-5_mwcsaj",
+    // ].map((img)=> cld.image(img).format('auto').quality('auto').resize(fill().width(436))),
+    // linkProyect: "https://app-to-do-sigma.vercel.app/",
+    // repoProyect: "https://github.com/EzeGomez0407/App-To-Do",
+    // typeProyect: "PROYECTO PERSONAL (EN DESARROLLO)",
   },
 ];

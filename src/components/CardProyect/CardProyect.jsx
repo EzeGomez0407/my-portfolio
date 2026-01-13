@@ -7,7 +7,8 @@ import Carrousel from "../CarrouselManual/Carrousel";
 export default function CardProyect({
   titleProyect,
   descriptionProyect,
-  imgArr,
+  // imgArr,
+  imgProyect,
   linkProyect,
   repoProyect,
   typeProyect,
@@ -15,7 +16,7 @@ export default function CardProyect({
   return (
     <div className={s.proyects}>
       <span className={s.titleProyect}>{titleProyect}</span>
-      <Carrousel arrImages={imgArr} />
+      <Carrousel arrImages={imgProyect} />
 
       <span className={s.containLinks}>
         <a
