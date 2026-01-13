@@ -1,6 +1,6 @@
 import CardProyect from "../CardProyect/CardProyect";
 import s from "./Proyects.module.css";
-import { proyects } from "../../data/proyectsData";
+// import { proyects } from "../../data/proyectsData";
 
 function Proyects() {
   return (

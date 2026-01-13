@@ -42,12 +42,12 @@
   border-bottom: 1px solid #fff;
 }
 
-/* @media (min-width: 720px) {
+@media (min-width: 720px) {
   .containImg {
     width: 460px;
     height: 233px;
   }
-} */
+}
 /* TRANSITIONS */
 
 .fade_img-enter {

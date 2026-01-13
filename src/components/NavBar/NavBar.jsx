@@ -1,34 +1,33 @@
 import React from "react";
 import { Outlet } from "react-router";
 import { useEffect, useState } from "react";
-// import ContactMe from "../../pages/ContactMe/ContactMe";
 import s from "./navBar.module.css";
 
 function NavBar() {
-  // const [widthScreen, setWidthScreen] = useState();
+  const [widthScreen, setWidthScreen] = useState();
 
-  // window.addEventListener("resize", () => {
-  //   setWidthScreen(window.visualViewport.width);
-  // });
+  window.addEventListener("resize", () => {
+    setWidthScreen(window.visualViewport.width);
+  });
 
-  // const handlerClickScroll = (e) => {
-  //   e.preventDefault();
-  //   const { name } = e.target;
-  //   const element = document.getElementById(name);
+  const handlerClickScroll = (e) => {
+    e.preventDefault();
+    const { name } = e.target;
+    const element = document.getElementById(name);
 
-  //   widthScreen < 1400
-  //     ? element.scrollIntoView({ behavior: "smooth", block: "start" })
-  //     : element.scrollIntoView({ behavior: "smooth", block: "end" });
-  // };
+    widthScreen < 1400
+      ? element.scrollIntoView({ behavior: "smooth", block: "start" })
+      : element.scrollIntoView({ behavior: "smooth", block: "end" });
+  };
 
   useEffect(() => {
-    // setWidthScreen(window.visualViewport.width);
+    setWidthScreen(window.visualViewport.width);
   }, []);
 
   return (
     <div className={s.containLayout}>
       <nav className={s.nav}>
-        {/* <button
+        <button
           className={s.links}
           name="about-me"
           onClick={handlerClickScroll}
@@ -45,10 +44,10 @@ function NavBar() {
         <button className={s.links} name="skills" onClick={handlerClickScroll}>
           Habilidades
         </button>
-        {/* <a className={s.links} href="#my-experience">
+        <a className={s.links} href="#my-experience">
             Experiencia
-          </a> */}
-        {/* <Link className={s.links} to="/contact-me">
+          </a>
+          <Link className={s.links} to="/contact-me">
             Contacto
           </Link> 
         <button
@@ -57,7 +56,7 @@ function NavBar() {
           onClick={handlerClickScroll}
         >
           Contacto
-        </button> */}
+        </button>
       </nav>
 
       <Outlet />
