@@ -47,9 +47,9 @@ function NavBar() {
         <a className={s.links} href="#my-experience">
             Experiencia
           </a>
-          <Link className={s.links} to="/contact-me">
+          {/* <Link className={s.links} to="/contact-me">
             Contacto
-          </Link> 
+          </Link>  */}
         <button
           className={s.links}
           name="contact-me"
