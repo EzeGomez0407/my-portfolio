@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 import s from "./navBar.module.css";
 
 function NavBar() {
-  const [widthScreen, setWidthScreen] = useState();
+  // const [widthScreen, setWidthScreen] = useState();
 
-  window.addEventListener("resize", () => {
-    setWidthScreen(window.visualViewport.width);
-  });
+  // window.addEventListener("resize", () => {
+  //   setWidthScreen(window.visualViewport.width);
+  // });
 
   // const handlerClickScroll = (e) => {
   //   e.preventDefault();
@@ -22,7 +22,7 @@ function NavBar() {
   // };
 
   useEffect(() => {
-    setWidthScreen(window.visualViewport.width);
+    // setWidthScreen(window.visualViewport.width);
   }, []);
 
   return (
