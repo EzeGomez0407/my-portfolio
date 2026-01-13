@@ -6,7 +6,7 @@ function Proyects() {
   return (
     <section className={s.contain} id="my-proyects">
       <h2 className={s.titleHeader}>Proyectos</h2>
-      <div className={s.containProyect}>
+      {/* <div className={s.containProyect}>
         {proyects.length &&
           proyects.map((proyect) => (
             <CardProyect
@@ -20,7 +20,7 @@ function Proyects() {
               key={proyect.linkProyect}
             />
           ))}
-      </div>
+      </div> */}
     </section>
   );
 }
