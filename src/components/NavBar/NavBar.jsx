@@ -11,15 +11,15 @@ function NavBar() {
     setWidthScreen(window.visualViewport.width);
   });
 
-  const handlerClickScroll = (e) => {
-    e.preventDefault();
-    const { name } = e.target;
-    const element = document.getElementById(name);
+  // const handlerClickScroll = (e) => {
+  //   e.preventDefault();
+  //   const { name } = e.target;
+  //   const element = document.getElementById(name);
 
-    widthScreen < 1400
-      ? element.scrollIntoView({ behavior: "smooth", block: "start" })
-      : element.scrollIntoView({ behavior: "smooth", block: "end" });
-  };
+  //   widthScreen < 1400
+  //     ? element.scrollIntoView({ behavior: "smooth", block: "start" })
+  //     : element.scrollIntoView({ behavior: "smooth", block: "end" });
+  // };
 
   useEffect(() => {
     setWidthScreen(window.visualViewport.width);
@@ -28,7 +28,7 @@ function NavBar() {
   return (
     <div className={s.containLayout}>
       <nav className={s.nav}>
-        <button
+        {/* <button
           className={s.links}
           name="about-me"
           onClick={handlerClickScroll}
@@ -50,14 +50,14 @@ function NavBar() {
           </a> */}
         {/* <Link className={s.links} to="/contact-me">
             Contacto
-          </Link> */}
+          </Link> 
         <button
           className={s.links}
           name="contact-me"
           onClick={handlerClickScroll}
         >
           Contacto
-        </button>
+        </button> */}
       </nav>
 
       <Outlet />
