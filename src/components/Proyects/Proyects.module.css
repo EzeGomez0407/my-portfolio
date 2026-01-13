@@ -9,7 +9,7 @@
   color: #fff;
   padding: 20px 0;
 }
-@media (min-width: 720px) {
+/* @media (min-width: 720px) {
   .containProyect {
     padding: 20px;
     display: flex;
@@ -17,4 +17,4 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
-}
+} */

@@ -25,7 +25,7 @@
   text-align: left;
   margin: 20px 0;
 }
-
+/* 
 @media (min-width: 830px) {
   .header {
     flex-direction: row;
@@ -46,4 +46,4 @@
     margin: 0;
     font-size: 18px;
   }
-}
+} */
