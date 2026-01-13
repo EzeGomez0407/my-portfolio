@@ -53,7 +53,7 @@ function Skills() {
           name="ver-mas"
           className={s.btnViewMore}
         >
-          Mostrar más
+          Mostrar menos
         </button>
       ) : (
         vieWidth < 720 && (
@@ -62,7 +62,7 @@ function Skills() {
             name="ver-menos"
             className={s.btnViewMore}
           >
-            Mostrar menos
+            Mostrar más
           </button>
         )
       )}
