@@ -1,4 +1,5 @@
 import { Cloudinary } from "@cloudinary/url-gen";
+import { fill } from "@cloudinary/url-gen/actions/resize"
 const cld = new Cloudinary({cloud: {cloudName: "dhn7thh3k"}})
 
 export const proyects = [
@@ -47,7 +48,7 @@ export const proyects = [
       "PI_screenshot_o2uoiz",
       "PI_screenshot_3_bbpwj5",
       "PI_screenshot_4_dw8rpt",
-    ].map((img)=> cld.image(img).format('auto').quality('auto')),
+    ].map((img)=> cld.image(img).format('auto').quality('auto').resize(fill().width(436))),
     linkProyect: "https://henry-food-one.vercel.app/",
     repoProyect: "https://github.com/EzeGomez0407/Proyecto-Individual-",
     typeProyect: "PROYECTO ACADÉMICO INDIVIDUAL",
@@ -61,7 +62,7 @@ export const proyects = [
       "img-app-todo-3_fqldha",
       "img-app-todo-4_q3wma0",
       "img-app-todo-5_mwcsaj",
-    ].map((img)=> cld.image(img).format('auto').quality('auto')),
+    ].map((img)=> cld.image(img).format('auto').quality('auto').resize(fill().width(436))),
     linkProyect: "https://app-to-do-sigma.vercel.app/",
     repoProyect: "https://github.com/EzeGomez0407/App-To-Do",
     typeProyect: "PROYECTO PERSONAL (EN DESARROLLO)",
