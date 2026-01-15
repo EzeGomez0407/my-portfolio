@@ -42,25 +42,22 @@ export default function Proyects() {
         urlGit={"https://github.com/EzeGomez0407/App-To-Do"}
         proyectType={"PROYECTO PERSONAL"}
       >
-        <b>App ToDo Aplicación web para la gestión de tareas.</b>
+        <b>Aplicación web para la gestión de tareas.</b>
         <ul>
-            <li className="flex items-center gap-1.5 text-[18px] w-fit">
-                <GoDotFill className="text-[10px] " />
-                Creación, edición y eliminación de tareas 
-            </li>
-            <li className="flex items-center gap-1.5 text-[18px] w-fit">
-                <GoDotFill className="text-[10px] " />
-                Marcado de tareas completadas
-            </li>
-            <li className="flex items-center gap-1.5 text-[18px] w-fit">
-                <GoDotFill className="text-[10px] " />
-                Organización simple y clara de pendientes 
-            </li>
-            <li className="flex items-center gap-1.5 text-[18px] w-fit">
-                <GoDotFill className="text-[10px] " />
-                Stack: React · JavaScript · CSS
-            </li>
+          <li className="flex items-center gap-1.5 text-[18px] w-fit">
+            <GoDotFill className="text-[10px] " />
+            Creación, edición y eliminación de tareas
+          </li>
+          <li className="flex items-center gap-1.5 text-[18px] w-fit">
+            <GoDotFill className="text-[10px] " />
+            Marcado de tareas completadas
+          </li>
+          <li className="flex items-center gap-1.5 text-[18px] w-fit">
+            <GoDotFill className="text-[10px] " />
+            Organización simple y clara de pendientes
+          </li>
         </ul>
+        Stack: React · JavaScript · CSS
       </Proyect>
     </section>
   );
