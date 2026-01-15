@@ -1,20 +1,25 @@
 import './App.css'
-import { Route, Routes } from "react-router";
-import Home from "./components/Home/Home";
-import Nav from "./components/NavBar/NavBar";
+import AboutMe from './components/AboutMe'
+import ContactMe from './components/ContactMe'
+import Proyects from './components/Proyects'
+import SectionSeparator from './components/SectionSeparator'
+import SoftSkills from './components/SoftSkills'
+import TechSkill from './components/TechSkill'
 
 function App() {
 
   return (
-    <div className="App">
-
-      <Routes>
-        <Route path="/" element={<Nav />}>
-          <Route index element={<Home />} />
-          {/* <Route path="/contact-me" element={<ContactMe />} /> */}
-        </Route>
-      </Routes>
-    </div>
+    <>
+      <AboutMe />
+      <SectionSeparator title='Proyectos'/>
+      <Proyects />
+      <SectionSeparator title='Habilidades Blandas'/>
+      <SoftSkills />
+      <SectionSeparator title='Habilidades Técnicas'/>
+      <TechSkill />
+      <SectionSeparator title='Contacto'/>
+      <ContactMe />
+    </>
   )
 }
 
