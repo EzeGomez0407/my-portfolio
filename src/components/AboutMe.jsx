@@ -2,8 +2,8 @@
 export default function AboutMe(){
     return <section className="flex flex-col gap-5 justify-start items-center">
         <div className='flex items-center justify-start w-full'>
-            <img src="/perfil.png" className='w-28'/> 
-            <div className='text-left flex-col items-center gap-4'>
+            <img src="/perfil.png" className='w-28 mr-4'/> 
+            <div className='text-left flex-col items-center gap-8'>
                 <h1 className='text-6xl max-md:text-4xl max-sm:text-3xl'>Desarrollador Web Frontend</h1>
                 <h3 className='px-0.5 text-3xl max-sm:text-xl'>Ezequiel Gómez Merlo</h3>
             </div>
