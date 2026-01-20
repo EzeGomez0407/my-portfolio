@@ -65,10 +65,10 @@ import { SiGithub } from "react-icons/si";
 
 function Proyect({ children, title, urlImg, urlWeb, urlGit, proyectType }) {
   return (
-    <article className="flex flex-col items-center justify-between gap-2 w-fit h-170 p-3 bg-[#00000042] inset-shadow-sm inset-shadow-black rounded-xl ">
+    <article className="relative flex flex-col items-center justify-start gap-4 w-fit h-155 p-3 bg-[#00000042] inset-shadow-sm inset-shadow-black rounded-xl ">
       <h4 className="text-blue-200 font-medium text-[18px]">{title}</h4>
-      <img src={urlImg} className="w-96 h-auto" />
-      <div className="flex items-center gap-1.5 my-2 justify-around w-80">
+      <img src={urlImg} className="w-80 h-auto" />
+      <div className="flex items-center gap-1.5 justify-around w-80">
         <a
           href={urlWeb}
           target="_blank"
@@ -86,8 +86,8 @@ function Proyect({ children, title, urlImg, urlWeb, urlGit, proyectType }) {
           <SiGithub className="mr-1.5 text-black" /> Repositorio{" "}
         </a>
       </div>
-      <p className="text-left w-96 text-[20px] mb-1.5">{children}</p>
-      <div className="relative w-full text-right ">
+      <p className="text-left w-80 text-[20px] mb-1.5">{children}</p>
+      <div className="absolute bottom-3 right-3 w-full text-right ">
         <span className="italic shadow-sm shadow-black px-1.5 py-1">
           {proyectType}
         </span>
