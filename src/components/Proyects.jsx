@@ -7,7 +7,7 @@ export default function Proyects() {
         title={"Henry Food"}
         urlWeb={"https://henry-food-one.vercel.app/"}
         urlImg={
-          "https://res.cloudinary.com/dhn7thh3k/image/upload/f_auto/q_auto/c_fill,w_436/PI_screenshot_2_xlqmyx?_a=DAJHqpDbZAA0"
+          "PI_image.jpg"
         }
         urlGit={"https://github.com/EzeGomez0407/Proyecto-Individual-"}
         proyectType={"PROYECTO ACADÉMICO INDIVIDUAL"}
