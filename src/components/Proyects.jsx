@@ -1,4 +1,8 @@
 import { GoDotFill } from "react-icons/go";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import ToolInventoryImage from "/tool_inventary.png"
+import FMCCEImage from "/FM_CCE_image.jpg"
+import PIImage from "/PI_image.jpg"
 
 export default function Proyects() {
   return (
@@ -6,9 +10,8 @@ export default function Proyects() {
       <Proyect
         title={"Sistema de inventario para obras de construcción"}
         urlWeb={"https://inventario-herramienta-0llp.onrender.com"}
-        urlImg={
-          "tool_inventary.png"
-        }
+        urlImg={ToolInventoryImage}
+        placeHoldIMG="tool_inventaryLazy.jpg"
         urlGit={"https://github.com/EzeGomez0407/radio-cce"}
         proyectType={"PROYECTO REAL"}
       >
@@ -32,9 +35,8 @@ export default function Proyects() {
       <Proyect
         title={"Web Iglesia + Radio Online"}
         urlWeb={"https://radio-cce.onrender.com/"}
-        urlImg={
-          "FM_CCE_image.jpg"
-        }
+        urlImg={FMCCEImage}
+        placeHoldIMG={"FM_CCE_imageLazy.jpg"}
         urlGit={"https://github.com/EzeGomez0407/radio-cce"}
         proyectType={"PROYECTO REAL"}
       >
@@ -58,7 +60,8 @@ export default function Proyects() {
       <Proyect
         title={"Henry Food"}
         urlWeb={"https://henry-food-one.vercel.app/"}
-        urlImg={"PI_image.jpg"}
+        urlImg={'tool_inventary.png'}
+        placeHoldIMG={"PI_imageLazy.jpg"}
         urlGit={"https://github.com/EzeGomez0407/Proyecto-Individual-"}
         proyectType={"PROYECTO ACADÉMICO INDIVIDUAL"}
       >
@@ -89,11 +92,17 @@ export default function Proyects() {
 
 import { SiGithub } from "react-icons/si";
 
-function Proyect({ children, title, urlImg, urlWeb, urlGit, proyectType }) {
+function Proyect({ children, title, urlImg, urlWeb, urlGit, proyectType, placeHoldIMG }) {
   return (
     <article className="relative flex flex-col items-center justify-start gap-4 w-fit h-155 p-3 bg-[#00000042] inset-shadow-sm inset-shadow-black rounded-xl ">
       <h4 className="text-blue-200 font-medium text-[18px] w-80">{title}</h4>
-      <img src={urlImg} className="w-80 h-auto" />
+      {/* <img src={urlImg} className="w-80 h-auto" /> */}
+      <LazyLoadImage src={urlImg}
+        width={320}
+        placeholderSrc={placeHoldIMG}
+        // effect="blur"
+        alt={`Imagen de proyecto: ${title}`}
+      />
       <div className="flex items-center gap-1.5 justify-around w-80">
         <a
           href={urlWeb}
