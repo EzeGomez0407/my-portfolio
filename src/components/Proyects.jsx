@@ -4,32 +4,30 @@ export default function Proyects() {
   return (
     <section className="flex justify-center items-center gap-4 flex-wrap">
       <Proyect
-        title={"Henry Food"}
-        urlWeb={"https://henry-food-one.vercel.app/"}
-        urlImg={"PI_image.jpg"}
-        urlGit={"https://github.com/EzeGomez0407/Proyecto-Individual-"}
-        proyectType={"PROYECTO ACADÉMICO INDIVIDUAL"}
+        title={"Sistema de inventario para obras de construcción"}
+        urlWeb={"https://inventario-herramienta-0llp.onrender.com"}
+        urlImg={
+          "tool_inventary.png"
+        }
+        urlGit={"https://github.com/EzeGomez0407/radio-cce"}
+        proyectType={"PROYECTO REAL"}
       >
-        <b>Aplicación web para búsqueda y gestión de recetas.</b>
-        <ul className="">
+        <b>Aplicación web para la gestión de obras de construcción e inventario de herramientas.</b>
+        <ul>
           <li className="flex items-center gap-1.5 text-[18px] w-fit">
             <GoDotFill className="text-[10px] " />
-            Filtros por tipo de dieta
+            CRUD de obras y herramientas
           </li>
           <li className="flex items-center gap-1.5 text-[18px] w-fit">
             <GoDotFill className="text-[10px] " />
-            Búsqueda por nombre
+            Transferencia de herramientas entre obras
           </li>
           <li className="flex items-center gap-1.5 text-[18px] w-fit">
             <GoDotFill className="text-[10px] " />
-            Ordenamiento alfabético y por puntaje
-          </li>
-          <li className="flex items-center gap-1.5 text-[18px] w-fit">
-            <GoDotFill className="text-[10px] " />
-            Creación de recetas mediante formulario controlado
+            Registro histórico de movimientos
           </li>
         </ul>
-        Stack: React · JavaScript ·Redux · CSS
+        Stack: React · JavaScript · Node.js · PostgreSQL
       </Proyect>
       <Proyect
         title={"Web Iglesia + Radio Online"}
@@ -57,6 +55,34 @@ export default function Proyects() {
         </ul>
         Stack: React · JavaScript · Tailwind CSS
       </Proyect>
+      <Proyect
+        title={"Henry Food"}
+        urlWeb={"https://henry-food-one.vercel.app/"}
+        urlImg={"PI_image.jpg"}
+        urlGit={"https://github.com/EzeGomez0407/Proyecto-Individual-"}
+        proyectType={"PROYECTO ACADÉMICO INDIVIDUAL"}
+      >
+        <b>Aplicación web para búsqueda y gestión de recetas.</b>
+        <ul className="">
+          <li className="flex items-center gap-1.5 text-[18px] w-fit">
+            <GoDotFill className="text-[10px] " />
+            Filtros por tipo de dieta
+          </li>
+          <li className="flex items-center gap-1.5 text-[18px] w-fit">
+            <GoDotFill className="text-[10px] " />
+            Búsqueda por nombre
+          </li>
+          <li className="flex items-center gap-1.5 text-[18px] w-fit">
+            <GoDotFill className="text-[10px] " />
+            Ordenamiento alfabético y por puntaje
+          </li>
+          <li className="flex items-center gap-1.5 text-[18px] w-fit">
+            <GoDotFill className="text-[10px] " />
+            Creación de recetas mediante formulario controlado
+          </li>
+        </ul>
+        Stack: React · JavaScript ·Redux · CSS
+      </Proyect>
     </section>
   );
 }
@@ -66,7 +92,7 @@ import { SiGithub } from "react-icons/si";
 function Proyect({ children, title, urlImg, urlWeb, urlGit, proyectType }) {
   return (
     <article className="relative flex flex-col items-center justify-start gap-4 w-fit h-155 p-3 bg-[#00000042] inset-shadow-sm inset-shadow-black rounded-xl ">
-      <h4 className="text-blue-200 font-medium text-[18px]">{title}</h4>
+      <h4 className="text-blue-200 font-medium text-[18px] w-80">{title}</h4>
       <img src={urlImg} className="w-80 h-auto" />
       <div className="flex items-center gap-1.5 justify-around w-80">
         <a
