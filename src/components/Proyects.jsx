@@ -60,7 +60,7 @@ export default function Proyects() {
       <Proyect
         title={"Henry Food"}
         urlWeb={"https://henry-food-one.vercel.app/"}
-        urlImg={'tool_inventary.png'}
+        urlImg={PIImage}
         placeHoldIMG={"PI_imageLazy.jpg"}
         urlGit={"https://github.com/EzeGomez0407/Proyecto-Individual-"}
         proyectType={"PROYECTO ACADÉMICO INDIVIDUAL"}
